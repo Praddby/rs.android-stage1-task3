@@ -8,7 +8,7 @@ class Combinator {
         println(array[0])
         print(array[1])
         var result: Int? = null
-        for (n in 1..array[1]) {
+        for (n in 1 until array[1]) {
             if (n < 10) {
                 val sum = factorial(array[1]) / (factorial(n) * factorial(array[1] - n))
                 if (sum == array[0]) {
